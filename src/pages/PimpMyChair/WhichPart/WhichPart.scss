@@ -1,0 +1,39 @@
+.which-part {
+  position: absolute;
+  left: 0;
+
+  &__option {
+    background-size: cover;
+    background-position: 50%;
+    background-color: white;
+    margin-bottom: 3px;
+    padding: 10px;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      border-left: 5px solid white;
+      width: 58px;
+    }
+
+    &.active {
+      border-right: 3px solid red;
+      width: 58px;
+      cursor: default;
+
+      &:hover {
+        border-left: none;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      pointer-events: none;
+    }
+  }
+}
